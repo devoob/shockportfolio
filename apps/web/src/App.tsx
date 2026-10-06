@@ -1,5 +1,6 @@
 import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { AppShell, type AppView } from "./components/AppShell";
+import { BootScreen } from "./components/BootScreen";
 import { ErrorBanner } from "./components/ErrorBanner";
 import { ErrorBoundary } from "./components/ErrorBoundary";
 import { LoadingLine } from "./components/LoadingLine";
@@ -117,16 +118,41 @@ export default function App() {
 
   const resultRef = useRef<HTMLDivElement>(null);
 
+  // First-load splash: hold a minimum of ~700ms so it never flashes, then
+  // fade out once the portfolio is known. Reduced-motion users skip the hold.
+  const bootStartedAt = useRef(performance.now());
+  const [bootVisible, setBootVisible] = useState(true);
+  const [bootMounted, setBootMounted] = useState(true);
+
+  useEffect(() => {
+    if (portfolioLoading) return;
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const remaining = reduced
+      ? 0
+      : Math.max(0, 700 - (performance.now() - bootStartedAt.current));
+    const timer = window.setTimeout(() => setBootVisible(false), remaining);
+    return () => window.clearTimeout(timer);
+  }, [portfolioLoading]);
+
+  useEffect(() => {
+    if (bootVisible) return;
+    const timer = window.setTimeout(() => setBootMounted(false), 400);
+    return () => window.clearTimeout(timer);
+  }, [bootVisible]);
+
   const setView = useCallback((next: View) => {
     setViewState(next);
     if (window.location.hash !== `#${next}`) {
       window.history.replaceState(null, "", `#${next}`);
-      window.scrollTo({ top: 0 });
     }
+    window.scrollTo({ top: 0 });
   }, []);
 
   useEffect(() => {
-    const onHashChange = () => setViewState(viewFromHash());
+    const onHashChange = () => {
+      setViewState(viewFromHash());
+      setRisksView(risksViewFromHash());
+    };
     window.addEventListener("hashchange", onHashChange);
     return () => window.removeEventListener("hashchange", onHashChange);
   }, []);
@@ -158,6 +184,12 @@ export default function App() {
       panel?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   }, []);
+
+  // The legacy #mitigation deep link should land with the sandbox already open.
+  useEffect(() => {
+    if (portfolioLoading) return;
+    if (window.location.hash === "#mitigation") revealMitigation();
+  }, [portfolioLoading, revealMitigation]);
 
   const openMitigationForScenario = useCallback(
     async (scenarioId: string) => {
@@ -500,7 +532,11 @@ export default function App() {
                 market={market}
                 running={running}
                 onRun={runMarketStress}
-                onClear={() => setMarket(null)}
+                onClear={() => {
+                  setMarket(null);
+                  setResult(null);
+                  setRunError(null);
+                }}
               />
             ) : (
               <ScenarioWorkspace
@@ -600,6 +636,8 @@ export default function App() {
           </Suspense>
         </ErrorBoundary>
       )}
+
+      {bootMounted && <BootScreen visible={bootVisible} />}
     </>
   );
 }

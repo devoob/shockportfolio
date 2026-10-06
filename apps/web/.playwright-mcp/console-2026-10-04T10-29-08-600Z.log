@@ -1,0 +1,2 @@
+[   26683ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:5173/src/features/mitigation/MitigationSandbox.tsx?t=1791109775265:0
+[   26683ms] [ERROR] [hmr] Failed to reload /src/features/mitigation/MitigationSandbox.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:175

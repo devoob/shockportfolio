@@ -130,6 +130,9 @@ export function RiskDashboard({
             );
           })}
         </div>
+        {!loading && !exposureError && quickScenarios.length === 0 && (
+          <p className="text-sm text-ink-tertiary">Scenario ranking is unavailable right now.</p>
+        )}
       </section>
 
       <section className="space-y-5">

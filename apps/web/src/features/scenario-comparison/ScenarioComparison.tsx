@@ -21,10 +21,13 @@ function Stat({ label, value, caption }: { label: string; value: string; caption
   );
 }
 
-function contribution(row: ScenarioComparisonRow, symbol: string): number | null {
-  return (
-    row.asset_contributions.find((item) => item.symbol === symbol)?.impact_pct_of_portfolio ?? null
-  );
+function contribution(
+  row: ScenarioComparisonRow,
+  symbol: string,
+): { value: number; hasAssumption: boolean } | null {
+  const item = row.asset_contributions.find((entry) => entry.symbol === symbol);
+  if (!item) return null;
+  return { value: item.impact_pct_of_portfolio, hasAssumption: item.has_assumption };
 }
 
 function heatStyle(value: number | null, max: number): React.CSSProperties {
@@ -170,15 +173,24 @@ export function ScenarioComparison({
                           </div>
                         </td>
                         {data.asset_symbols.map((symbol) => {
-                          const value = contribution(row, symbol);
+                          const cell = contribution(row, symbol);
+                          const noAssumption = cell !== null && !cell.hasAssumption;
                           return (
                             <td
                               key={symbol}
-                              style={heatStyle(value, maxContribution)}
+                              style={heatStyle(cell?.value ?? null, maxContribution)}
                               className="px-3 py-3 text-right font-mono text-xs tabular-nums text-ink"
-                              title={`${row.title} · ${symbol}`}
+                              title={
+                                noAssumption
+                                  ? `${row.title} · ${symbol}: no assumption for this asset`
+                                  : `${row.title} · ${symbol}`
+                              }
                             >
-                              {value === null ? "—" : formatSignedPercentagePoints(value)}
+                              {cell === null
+                                ? "—"
+                                : noAssumption
+                                  ? "n/a"
+                                  : formatSignedPercentagePoints(cell.value)}
                             </td>
                           );
                         })}

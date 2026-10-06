@@ -191,7 +191,7 @@ export function RiskFeed({
         </div>
         <div className="flex flex-wrap items-center gap-2 text-xs">
           <div role="group" aria-label="Source tier" className="inline-flex border border-line-strong">
-            {[null, 1, 3, 4].map((t) => (
+            {[null, 1, 2, 3, 4].map((t) => (
               <button
                 key={String(t)}
                 type="button"

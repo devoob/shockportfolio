@@ -1,0 +1,272 @@
+- generic [ref=f1e3]:
+  - complementary [ref=f1e4]:
+    - generic [ref=f1e5]:
+      - button "Shock Lens home" [ref=f1e6] [cursor=pointer]:
+        - img "Shock Lens" [ref=f1e7]
+        - generic [ref=f1e10]:
+          - generic [ref=f1e11]: Shock Lens
+          - generic [ref=f1e12]: Portfolio intelligence
+      - button "Collapse sidebar" [ref=f1e13] [cursor=pointer]
+    - generic [ref=f1e16]:
+      - generic [ref=f1e17]: Active portfolio
+      - combobox "Active portfolio" [ref=f1e18]:
+        - option "Global Multi-Asset Risk Portfolio" [selected]
+        - option "Technology Heavy Portfolio"
+    - navigation "Main navigation" [ref=f1e19]:
+      - button "Home" [ref=f1e20] [cursor=pointer]
+      - button "Stress analytics" [ref=f1e24] [cursor=pointer]
+      - button "Alerts & signals" [ref=f1e28] [cursor=pointer]
+      - button "Portfolio" [ref=f1e32] [cursor=pointer]
+      - button "Settings" [ref=f1e38] [cursor=pointer]
+    - generic [ref=f1e43]:
+      - paragraph [ref=f1e47]: Your numbers stay explainable
+      - paragraph [ref=f1e48]: AI explains assumptions. Portfolio impact is calculated by the risk engine.
+  - generic [ref=f1e49]:
+    - banner [ref=f1e50]:
+      - generic [ref=f1e51]:
+        - generic [ref=f1e53]:
+          - paragraph [ref=f1e54]: Explore a what-if
+          - heading "Stress analytics" [level=1] [ref=f1e55]
+        - generic [ref=f1e56]:
+          - generic [ref=f1e57]:
+            - generic [ref=f1e58]: Portfolio
+            - combobox "Portfolio" [ref=f1e59]:
+              - option "Global Multi-Asset Risk Portfolio" [selected]
+              - option "Technology Heavy Portfolio"
+          - button "Open risk report" [ref=f1e60] [cursor=pointer]
+          - button "AR" [ref=f1e65] [cursor=pointer]
+    - main [ref=f1e69]:
+      - generic [ref=f1e70]:
+        - generic [ref=f1e71]:
+          - generic [ref=f1e73]:
+            - generic [ref=f1e74]:
+              - paragraph [ref=f1e75]: Scenario construction engine
+              - heading "Search the library or describe the shock" [level=2] [ref=f1e76]
+            - generic [ref=f1e77]:
+              - generic [ref=f1e78]:
+                - textbox "Search scenarios or describe a shock" [ref=f1e83]:
+                  - /placeholder: Search scenarios or describe a shock…
+                - button "Build" [disabled] [ref=f1e84]
+              - paragraph [ref=f1e85]: No library match? Your text goes to a live LLM and comes back as illustrative assumptions.
+            - generic [ref=f1e86]:
+              - button "Oil +40% / Nasdaq −15%" [ref=f1e87] [cursor=pointer]:
+                - generic [aria-hidden] [ref=f1e88]: ⚡
+                - text: Oil +40% / Nasdaq −15%
+              - button "Fed rate cut 50bps" [ref=f1e89] [cursor=pointer]:
+                - generic [aria-hidden] [ref=f1e90]: ⚡
+                - text: Fed rate cut 50bps
+              - button "Taiwan Strait escalation" [ref=f1e91] [cursor=pointer]:
+                - generic [aria-hidden] [ref=f1e92]: ⚡
+                - text: Taiwan Strait escalation
+            - generic [ref=f1e474]: Pick a real crisis or type your own. Nothing is calculated until you run it.
+          - generic [ref=f1e96]:
+            - generic [ref=f1e98]:
+              - paragraph [ref=f1e99]: Live impact visualizer
+              - 'heading "Worst library event · Global Financial Crisis: Lehman to the Bottom (2008–09)" [level=2] [ref=f1e100]'
+            - generic [ref=f1e102]:
+              - 'generic "largest modeled drawdown: -25.2%" [ref=f1e103]':
+                - generic [ref=f1e107]:
+                  - generic [ref=f1e108]: "-25.2%"
+                  - generic [ref=f1e109]: largest modeled drawdown
+              - paragraph [ref=f1e111]: Across 23 library scenarios, this is the largest modeled loss on your current weights. Each figure is engine-computed.
+            - generic [ref=f1e113]:
+              - generic [ref=f1e114]: Impact of the most severe library scenarios
+              - list [ref=f1e115]:
+                - listitem [ref=f1e116]:
+                  - generic [ref=f1e117]: Global Financial
+                  - generic [ref=f1e120]: "-25.2%"
+                - listitem [ref=f1e121]:
+                  - generic [ref=f1e122]: COVID-19 Crash
+                  - generic [ref=f1e125]: "-24.7%"
+                - listitem [ref=f1e126]:
+                  - generic [ref=f1e127]: Q4 2018
+                  - generic [ref=f1e130]: "-17.1%"
+                - listitem [ref=f1e131]:
+                  - generic [ref=f1e132]: 2022 Rate-Hike
+                  - generic [ref=f1e135]: "-15.5%"
+                - listitem [ref=f1e136]:
+                  - generic [ref=f1e137]: Global Recession
+                  - generic [ref=f1e140]: "-15.1%"
+                - listitem [ref=f1e141]:
+                  - generic [ref=f1e142]: Taiwan Strait
+                  - generic [ref=f1e145]: "-12.6%"
+                - listitem [ref=f1e146]:
+                  - generic [ref=f1e147]: US High-Yield
+                  - generic [ref=f1e150]: "-12.3%"
+                - listitem [ref=f1e151]:
+                  - generic [ref=f1e152]: "'Liberation Day'"
+                  - generic [ref=f1e155]: "-9.8%"
+                - listitem [ref=f1e156]:
+                  - generic [ref=f1e157]: AI Bubble
+                  - generic [ref=f1e160]: "-9.7%"
+        - generic [ref=f1e162]:
+          - generic [ref=f1e163]:
+            - generic [ref=f1e164]:
+              - paragraph [ref=f1e165]: AI risk committee
+              - heading "Three labs argue independently · one chair reconciles" [level=2] [ref=f1e166]
+              - paragraph [ref=f1e167]: Every portfolio number below is computed by the deterministic engine. Model output is illustrative, never a forecast.
+            - generic [ref=f1e168]: 3 agents ready
+          - button "⚡ Convene committee & reconcile" [disabled] [ref=f1e170]
+          - generic [ref=f1e171]:
+            - generic [ref=f1e172]:
+              - generic [ref=f1e174]:
+                - generic [ref=f1e175]: Macro & Rates Strategist
+                - generic [ref=f1e176]: deepseek/deepseek-v4-flash
+              - paragraph [ref=f1e177]: "Top-down: central banks, inflation, real yields, the dollar"
+              - paragraph [ref=f1e179]: Will argue from the top-down lens.
+            - generic [ref=f1e180]:
+              - generic [ref=f1e182]:
+                - generic [ref=f1e183]: Sector & Earnings Analyst
+                - generic [ref=f1e184]: qwen/qwen3.8-max-0902
+              - paragraph [ref=f1e185]: "Bottom-up: revenues, margins, supply chains, valuation multiples"
+              - paragraph [ref=f1e187]: Will argue from the bottom-up lens.
+            - generic [ref=f1e188]:
+              - generic [ref=f1e190]:
+                - generic [ref=f1e191]: Cross-Asset & History Specialist
+                - generic [ref=f1e192]: moonshotai/kimi-k3
+              - paragraph [ref=f1e193]: Historical analogues, bond duration math, gold and crypto flows
+              - paragraph [ref=f1e195]: Will argue from the historical analogues, bond duration math, gold and crypto flows lens.
+        - generic [ref=f1e197]:
+          - generic [ref=f1e198]:
+            - generic [ref=f1e199]:
+              - paragraph [ref=f1e200]: Mitigation sandbox
+              - heading "Re-weight the portfolio, re-run every scenario" [level=2] [ref=f1e201]
+            - generic [ref=f1e202]:
+              - generic [ref=f1e203]:
+                - generic [ref=f1e204]: Worst before
+                - generic [ref=f1e205]: "-25.2%"
+              - generic [ref=f1e206]:
+                - generic [ref=f1e207]: Worst after
+                - generic [ref=f1e208]: "-25.2%"
+              - generic [ref=f1e209]:
+                - generic [ref=f1e210]: Risk reduced
+                - generic [ref=f1e211]: —
+          - generic [ref=f1e212]:
+            - generic [ref=f1e213]: Total 100.0%
+            - generic [ref=f1e215]:
+              - button "Normalize" [ref=f1e216] [cursor=pointer]
+              - button "Reset" [ref=f1e217] [cursor=pointer]
+          - generic [ref=f1e218]:
+            - generic [ref=f1e219]:
+              - generic [ref=f1e220]:
+                - generic [ref=f1e221]: SPY
+                - generic [ref=f1e222]: 15%
+              - slider "SPY weight" [ref=f1e223]: "15"
+              - generic [ref=f1e224]:
+                - spinbutton [ref=f1e225]: "15"
+                - generic [ref=f1e226]: "%"
+            - generic [ref=f1e227]:
+              - generic [ref=f1e228]:
+                - generic [ref=f1e229]: QQQ
+                - generic [ref=f1e230]: 10%
+              - slider "QQQ weight" [ref=f1e231]: "10"
+              - generic [ref=f1e232]:
+                - spinbutton [ref=f1e233]: "10"
+                - generic [ref=f1e234]: "%"
+            - generic [ref=f1e235]:
+              - generic [ref=f1e236]:
+                - generic [ref=f1e237]: NVDA
+                - generic [ref=f1e238]: 7%
+              - slider "NVDA weight" [ref=f1e239]: "7"
+              - generic [ref=f1e240]:
+                - spinbutton [ref=f1e241]: "7"
+                - generic [ref=f1e242]: "%"
+            - generic [ref=f1e243]:
+              - generic [ref=f1e244]:
+                - generic [ref=f1e245]: TSM
+                - generic [ref=f1e246]: 6%
+              - slider "TSM weight" [ref=f1e247]: "6"
+              - generic [ref=f1e248]:
+                - spinbutton [ref=f1e249]: "6"
+                - generic [ref=f1e250]: "%"
+            - generic [ref=f1e251]:
+              - generic [ref=f1e252]:
+                - generic [ref=f1e253]: JPM
+                - generic [ref=f1e254]: 6%
+              - slider "JPM weight" [ref=f1e255]: "6"
+              - generic [ref=f1e256]:
+                - spinbutton [ref=f1e257]: "6"
+                - generic [ref=f1e258]: "%"
+            - generic [ref=f1e259]:
+              - generic [ref=f1e260]:
+                - generic [ref=f1e261]: XOM
+                - generic [ref=f1e262]: 6%
+              - slider "XOM weight" [ref=f1e263]: "6"
+              - generic [ref=f1e264]:
+                - spinbutton [ref=f1e265]: "6"
+                - generic [ref=f1e266]: "%"
+            - generic [ref=f1e267]:
+              - generic [ref=f1e268]:
+                - generic [ref=f1e269]: XLV
+                - generic [ref=f1e270]: 5%
+              - slider "XLV weight" [ref=f1e271]: "5"
+              - generic [ref=f1e272]:
+                - spinbutton [ref=f1e273]: "5"
+                - generic [ref=f1e274]: "%"
+            - generic [ref=f1e275]:
+              - generic [ref=f1e276]:
+                - generic [ref=f1e277]: LMT
+                - generic [ref=f1e278]: 4%
+              - slider "LMT weight" [ref=f1e279]: "4"
+              - generic [ref=f1e280]:
+                - spinbutton [ref=f1e281]: "4"
+                - generic [ref=f1e282]: "%"
+            - generic [ref=f1e283]:
+              - generic [ref=f1e284]:
+                - generic [ref=f1e285]: FXI
+                - generic [ref=f1e286]: 5%
+              - slider "FXI weight" [ref=f1e287]: "5"
+              - generic [ref=f1e288]:
+                - spinbutton [ref=f1e289]: "5"
+                - generic [ref=f1e290]: "%"
+            - generic [ref=f1e291]:
+              - generic [ref=f1e292]:
+                - generic [ref=f1e293]: VNQ
+                - generic [ref=f1e294]: 5%
+              - slider "VNQ weight" [ref=f1e295]: "5"
+              - generic [ref=f1e296]:
+                - spinbutton [ref=f1e297]: "5"
+                - generic [ref=f1e298]: "%"
+            - generic [ref=f1e299]:
+              - generic [ref=f1e300]:
+                - generic [ref=f1e301]: TLT
+                - generic [ref=f1e302]: 9%
+              - slider "TLT weight" [ref=f1e303]: "9"
+              - generic [ref=f1e304]:
+                - spinbutton [ref=f1e305]: "9"
+                - generic [ref=f1e306]: "%"
+            - generic [ref=f1e307]:
+              - generic [ref=f1e308]:
+                - generic [ref=f1e309]: HYG
+                - generic [ref=f1e310]: 5%
+              - slider "HYG weight" [ref=f1e311]: "5"
+              - generic [ref=f1e312]:
+                - spinbutton [ref=f1e313]: "5"
+                - generic [ref=f1e314]: "%"
+            - generic [ref=f1e315]:
+              - generic [ref=f1e316]:
+                - generic [ref=f1e317]: BIL
+                - generic [ref=f1e318]: 4%
+              - slider "BIL weight" [ref=f1e319]: "4"
+              - generic [ref=f1e320]:
+                - spinbutton [ref=f1e321]: "4"
+                - generic [ref=f1e322]: "%"
+            - generic [ref=f1e323]:
+              - generic [ref=f1e324]:
+                - generic [ref=f1e325]: GLD
+                - generic [ref=f1e326]: 7%
+              - slider "GLD weight" [ref=f1e327]: "7"
+              - generic [ref=f1e328]:
+                - spinbutton [ref=f1e329]: "7"
+                - generic [ref=f1e330]: "%"
+            - generic [ref=f1e331]:
+              - generic [ref=f1e332]:
+                - generic [ref=f1e333]: BTC
+                - generic [ref=f1e334]: 6%
+              - slider "BTC weight" [ref=f1e335]: "6"
+              - generic [ref=f1e336]:
+                - spinbutton [ref=f1e337]: "6"
+                - generic [ref=f1e338]: "%"
+          - group [ref=f1e475]:
+            - generic "Scenario-by-scenario comparison" [ref=f1e476] [cursor=pointer]
+    - contentinfo [ref=f1e473]: Estimates are scenario-based, not forecasts. Shock Lens does not provide investment advice and does not execute trades.

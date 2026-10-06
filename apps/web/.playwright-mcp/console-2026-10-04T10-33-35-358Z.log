@@ -1,0 +1,112 @@
+[  132526ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:21548
+[  357982ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:21548
+[  382690ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:21548
+[  405744ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:21548
+[  407294ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:21548
+[  408137ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:21548
+[  409007ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:21548
+[  410053ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:21548
+[  413174ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:21548
+[  419226ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:21548
+[  492725ms] ReferenceError: streamRef is not defined
+    at CopilotWorkspace (http://localhost:5173/src/features/dashboard/CopilotWorkspace.tsx?t=1791110507824:308:16)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:11546:26)
+    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:14924:21)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:3697:24)
+    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:3731:39)
+    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:19763:15)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:19196:20)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:19135:13)
+[  492726ms] ReferenceError: streamRef is not defined
+    at CopilotWorkspace (http://localhost:5173/src/features/dashboard/CopilotWorkspace.tsx?t=1791110507824:308:16)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:11546:26)
+    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:14924:21)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:3697:24)
+    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:3731:39)
+    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:19763:15)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:19196:20)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:19135:13)
+[  492718ms] [ERROR] The above error occurred in the <CopilotWorkspace> component:
+
+    at CopilotWorkspace (http://localhost:5173/src/features/dashboard/CopilotWorkspace.tsx?t=1791110507824:98:3)
+    at div
+    at RiskDashboard (http://localhost:5173/src/features/dashboard/RiskDashboard.tsx?t=1791110361757:59:3)
+    at main
+    at div
+    at div
+    at AppShell (http://localhost:5173/src/components/AppShell.tsx?t=1791110361756:197:3)
+    at App (http://localhost:5173/src/App.tsx?t=1791110412967:83:7)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:14029
+[  492726ms] ReferenceError: streamRef is not defined
+    at CopilotWorkspace (http://localhost:5173/src/features/dashboard/CopilotWorkspace.tsx?t=1791110507824:308:16)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:11546:26)
+    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:14924:21)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:15912:22)
+    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:19751:22)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:19196:20)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:19135:13)
+    at renderRootSync (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:19114:15)
+    at recoverFromConcurrentError (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:18734:28)
+    at performSyncWorkOnRoot (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:18877:28)
+[  493074ms] ReferenceError: streamRef is not defined
+    at CopilotWorkspace (http://localhost:5173/src/features/dashboard/CopilotWorkspace.tsx?t=1791110508135:308:16)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:11546:26)
+    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:14924:21)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:3697:24)
+    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:3731:39)
+    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:19763:15)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:19196:20)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:19135:13)
+[  493074ms] ReferenceError: streamRef is not defined
+    at CopilotWorkspace (http://localhost:5173/src/features/dashboard/CopilotWorkspace.tsx?t=1791110508135:308:16)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:11546:26)
+    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:14924:21)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:3697:24)
+    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:3731:39)
+    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:19763:15)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:19196:20)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:19135:13)
+[  493078ms] [ERROR] The above error occurred in the <CopilotWorkspace> component:
+
+    at CopilotWorkspace (http://localhost:5173/src/features/dashboard/CopilotWorkspace.tsx?t=1791110508135:98:3)
+    at div
+    at RiskDashboard (http://localhost:5173/src/features/dashboard/RiskDashboard.tsx?t=1791110361757:59:3)
+    at main
+    at div
+    at div
+    at AppShell (http://localhost:5173/src/components/AppShell.tsx?t=1791110361756:197:3)
+    at App (http://localhost:5173/src/App.tsx?t=1791110412967:83:7)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:14029
+[  493084ms] ReferenceError: streamRef is not defined
+    at CopilotWorkspace (http://localhost:5173/src/features/dashboard/CopilotWorkspace.tsx?t=1791110508135:308:16)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:11546:26)
+    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:14924:21)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:15912:22)
+    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:19751:22)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:19196:20)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:19135:13)
+    at renderRootSync (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:19114:15)
+    at recoverFromConcurrentError (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:18734:28)
+    at performConcurrentWorkOnRoot (http://localhost:5173/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=80e19ae5:18682:30)
+[  494033ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:5173/src/features/dashboard/CopilotWorkspace.tsx?t=1791110509334:0
+[  494036ms] [ERROR] [hmr] Failed to reload /src/features/dashboard/CopilotWorkspace.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:175
+[  556709ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:5173/src/App.tsx?t=1791110572035:0
+[  556712ms] [ERROR] [hmr] Failed to reload /src/App.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:175
+[  574668ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:5173/src/App.tsx?t=1791110590000:0
+[  574668ms] [ERROR] [hmr] Failed to reload /src/App.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:175
+[  732128ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:5173/src/features/scenarios/ScenarioPicker.tsx?t=1791110747472:0
+[  732129ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:5173/src/features/scenarios/CustomScenarioInput.tsx?t=1791110747473:0
+[  732129ms] [ERROR] [hmr] Failed to reload /src/features/scenarios/ScenarioPicker.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:175
+[  732129ms] [ERROR] [hmr] Failed to reload /src/features/scenarios/CustomScenarioInput.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:175

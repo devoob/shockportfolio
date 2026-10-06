@@ -84,6 +84,19 @@ button {
   animation: gauge-in 700ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
 }
 
+.boot-progress {
+  animation: boot-progress 900ms ease-in-out infinite;
+}
+
+@keyframes boot-progress {
+  from {
+    transform: translateX(-120%);
+  }
+  to {
+    transform: translateX(320%);
+  }
+}
+
 @keyframes gauge-in {
   from {
     stroke-dasharray: 0 100;

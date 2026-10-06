@@ -1,0 +1,107 @@
+- generic [ref=f1e3]:
+  - complementary [ref=f1e4]:
+    - generic [ref=f1e5]:
+      - button "Shock Lens home" [ref=f1e6] [cursor=pointer]:
+        - img "Shock Lens" [ref=f1e7]
+        - generic [ref=f1e10]:
+          - generic [ref=f1e11]: Shock Lens
+          - generic [ref=f1e12]: Portfolio intelligence
+      - button "Collapse sidebar" [ref=f1e13] [cursor=pointer]
+    - generic [ref=f1e16]:
+      - generic [ref=f1e17]: Active portfolio
+      - combobox "Active portfolio" [ref=f1e18]:
+        - option "Global Multi-Asset Risk Portfolio" [selected]
+        - option "Technology Heavy Portfolio"
+    - navigation "Main navigation" [ref=f1e19]:
+      - button "Home" [ref=f1e20] [cursor=pointer]
+      - button "Stress analytics" [active] [ref=f1e24] [cursor=pointer]
+      - button "Alerts & signals" [ref=f1e28] [cursor=pointer]
+      - button "Portfolio" [ref=f1e32] [cursor=pointer]
+      - button "Settings" [ref=f1e38] [cursor=pointer]
+    - generic [ref=f1e43]:
+      - paragraph [ref=f1e47]: Your numbers stay explainable
+      - paragraph [ref=f1e48]: AI explains assumptions. Portfolio impact is calculated by the risk engine.
+  - generic [ref=f1e49]:
+    - banner [ref=f1e50]:
+      - generic [ref=f1e51]:
+        - generic [ref=f1e53]:
+          - paragraph [ref=f1e54]: Explore a what-if
+          - heading "Stress analytics" [level=1] [ref=f1e363]
+        - generic [ref=f1e56]:
+          - generic [ref=f1e57]:
+            - generic [ref=f1e58]: Portfolio
+            - combobox "Portfolio" [ref=f1e59]:
+              - option "Global Multi-Asset Risk Portfolio" [selected]
+              - option "Technology Heavy Portfolio"
+          - button "Open risk report" [ref=f1e60] [cursor=pointer]
+          - button "AR" [ref=f1e65] [cursor=pointer]
+    - main [ref=f1e69]:
+      - generic [ref=f1e364]:
+        - generic [ref=f1e366]:
+          - generic [ref=f1e367]:
+            - generic [ref=f1e368]: Start from a scenario
+            - combobox "Start from a scenario" [ref=f1e369]:
+              - option "Choose a scenario…" [selected]
+              - 'option "Global Financial Crisis: Lehman to the Bottom (2008–09)"'
+              - option "China Yuan Devaluation Shock (Aug 2015)"
+              - option "Q4 2018 Fed-Tightening Selloff"
+              - option "COVID-19 Crash (Feb–Mar 2020)"
+              - option "2022 Rate-Hike Bear Market (Historical)"
+              - option "Russia–Ukraine Invasion Shock (Feb–Mar 2022)"
+              - option "SVB Regional Banking Stress (Mar 2023)"
+              - option "Yen Carry-Trade Unwind (Jul–Aug 2024)"
+              - option "'Liberation Day' Tariff Shock (Apr 2025)"
+              - option "AI Bubble Bursts"
+              - option "China Property Crisis"
+              - option "Fed Emergency Rate Cut"
+              - option "Global Recession"
+              - option "Interest Rate Shock"
+              - option "Oil Supply Disruption"
+              - option "Regional Bank Run"
+              - option "Semiconductor Supply Shock"
+              - option "Strait of Hormuz Closure"
+              - option "Taiwan Strait Blockade"
+              - option "Technology Correction"
+              - option "US Export Controls Tightening"
+              - option "US High-Yield Credit Event"
+              - option "US Term-Premium Shock"
+          - generic [ref=f1e370]: or describe one
+          - generic [ref=f1e373]:
+            - generic [ref=f1e374]: What if…?
+            - generic [ref=f1e375]:
+              - textbox "What if…?" [ref=f1e376]:
+                - /placeholder: What if oil rises 40% and Nasdaq falls 15%?
+              - button "Build Scenario" [disabled] [ref=f1e377]
+            - paragraph [ref=f1e378]: Parsed by a live LLM — review the generated assumptions before running.
+        - generic [ref=f1e379]:
+          - generic [ref=f1e380]: Pick a scenario or describe one to see its impact on your portfolio here.
+          - generic [ref=f1e381]:
+            - generic [ref=f1e382]:
+              - generic [ref=f1e383]:
+                - heading "AI Risk Committee" [level=2] [ref=f1e384]
+                - paragraph [ref=f1e385]: Three models from three labs argue independently; a chair from a fourth reconciles them. The engine computes every portfolio number.
+              - button "Convene the committee" [disabled] [ref=f1e386]
+            - generic [ref=f1e387]:
+              - generic [ref=f1e388]:
+                - generic [ref=f1e390]:
+                  - generic [ref=f1e391]: Macro & Rates Strategist
+                  - generic [ref=f1e392]: deepseek/deepseek-v4-flash
+                - paragraph [ref=f1e393]: "Top-down: central banks, inflation, real yields, the dollar"
+                - paragraph [ref=f1e395]: Will argue from the top-down lens.
+              - generic [ref=f1e396]:
+                - generic [ref=f1e398]:
+                  - generic [ref=f1e399]: Sector & Earnings Analyst
+                  - generic [ref=f1e400]: qwen/qwen3.8-max-0902
+                - paragraph [ref=f1e401]: "Bottom-up: revenues, margins, supply chains, valuation multiples"
+                - paragraph [ref=f1e403]: Will argue from the bottom-up lens.
+              - generic [ref=f1e404]:
+                - generic [ref=f1e406]:
+                  - generic [ref=f1e407]: Cross-Asset & History Specialist
+                  - generic [ref=f1e408]: moonshotai/kimi-k3
+                - paragraph [ref=f1e409]: Historical analogues, bond duration math, gold and crypto flows
+                - paragraph [ref=f1e411]: Will argue from the historical analogues, bond duration math, gold and crypto flows lens.
+        - group [ref=f1e412]:
+          - generic "What if I change the allocation?compare a hypothetical allocation across every scenario ›" [ref=f1e413] [cursor=pointer]:
+            - generic [ref=f1e414]: What if I change the allocation?compare a hypothetical allocation across every scenario
+            - generic [ref=f1e415]: ›
+    - contentinfo [ref=f1e362]: Estimates are scenario-based, not forecasts. Shock Lens does not provide investment advice and does not execute trades.

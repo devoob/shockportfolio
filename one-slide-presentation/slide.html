@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>DEVANO_Jonathan_ShockLens</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --canvas: #F5F6F8;
+    --card: #FFFFFF;
+    --higher: #ECEEF2;
+    --ink: #121318;
+    --ink-2: #555C68;
+    --ink-3: #7B828E;
+    --line: #E3E6EB;
+    --line-strong: #CCD1D9;
+    --accent: #635BFF;
+    --accent-strong: #4A43DE;
+    --neg: #E5485D;
+    --pos: #168A62;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1920px; height: 1080px; }
+  body {
+    font-family: "Inter", "SF Pro Display", -apple-system, system-ui, "Segoe UI", sans-serif;
+    background: var(--canvas);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    overflow: hidden;
+  }
+  @page { size: 1920px 1080px; margin: 0; }
+
+  .slide {
+    width: 1920px; height: 1080px;
+    padding: 48px 56px 34px;
+    display: flex; flex-direction: column;
+  }
+
+  /* ---------- header ---------- */
+  header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-bottom: 20px; border-bottom: 1px solid var(--line);
+  }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .brand svg { width: 44px; height: 44px; display: block; }
+  .brand-divider { align-self: stretch; width: 1px; background: var(--line-strong); margin: 0 2px; }
+  .wordmark { font-size: 30px; font-weight: 700; letter-spacing: -0.02em; line-height: 1; }
+  .wordmark span { font-weight: 400; color: #71717A; }
+  .tagline { font-size: 15px; line-height: 1.4; color: var(--ink-2); letter-spacing: 0.01em; max-width: 190px; }
+  .who { text-align: right; }
+  .who .name { font-size: 21px; font-weight: 600; }
+  .who .course { margin-top: 4px; font-size: 15px; color: var(--ink-3); letter-spacing: 0.04em; text-transform: uppercase; }
+
+  /* ---------- main ---------- */
+  main {
+    flex: 1; min-height: 0;
+    display: grid; grid-template-columns: 1fr 660px; gap: 52px;
+    padding-top: 26px;
+  }
+
+  /* left column */
+  .pitch {
+    display: flex; flex-direction: column; justify-content: space-between;
+    min-height: 0; padding-bottom: 6px;
+  }
+
+  .hero .kicker {
+    font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent-strong); margin-bottom: 10px;
+  }
+  .hero .number-row { display: flex; align-items: baseline; gap: 20px; }
+  .hero .big {
+    font-size: 96px; font-weight: 800; letter-spacing: -0.04em; line-height: 0.95;
+    color: var(--neg); font-variant-numeric: tabular-nums;
+  }
+  .hero .big-sub { font-size: 24px; font-weight: 600; color: var(--ink-2); }
+  .hero .problem {
+    margin-top: 14px; font-size: 21px; line-height: 1.42; color: var(--ink-2); max-width: 1010px;
+  }
+  .hero .problem b { color: var(--ink); font-weight: 600; }
+
+  .blocks { display: contents; }
+  .block { display: grid; grid-template-columns: 168px 1fr; gap: 16px; align-items: start; }
+  .block .label {
+    font-size: 12.5px; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase;
+    color: var(--ink-3); padding-top: 4px;
+  }
+  .block .body { font-size: 19.5px; line-height: 1.4; color: var(--ink-2); }
+  .block .body b { color: var(--ink); font-weight: 600; }
+
+  .evidence {
+    background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--accent);
+    border-radius: 14px; padding: 13px 18px;
+    box-shadow: 0 8px 30px rgba(17, 24, 39, 0.05);
+  }
+  .evidence .label { color: var(--accent-strong); }
+  .evidence .body { color: var(--ink); }
+  .evidence .body em { font-style: normal; font-weight: 700; font-variant-numeric: tabular-nums; }
+
+  .close-line {
+    font-size: 26px; font-weight: 600; letter-spacing: -0.01em; color: var(--ink);
+    padding-top: 18px; border-top: 1px solid var(--line);
+  }
+  .close-line span { color: var(--accent-strong); }
+
+  /* right column */
+  .proof { display: flex; flex-direction: column; min-height: 0; }
+  .shot {
+    background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+    padding: 10px; box-shadow: 0 8px 30px rgba(17, 24, 39, 0.06);
+  }
+  .shot img { display: block; width: 100%; border-radius: 8px; }
+  .proof .caption { margin-top: 12px; display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; }
+  .proof .caption .left { font-size: 15px; line-height: 1.4; color: var(--ink-2); }
+  .proof .caption .left b { color: var(--ink); }
+  .pill {
+    flex: none; font-size: 12.5px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--accent-strong); background: #EEEDFF; border: 1px solid #DCDAFF;
+    border-radius: 999px; padding: 6px 12px; white-space: nowrap;
+  }
+
+  /* ---------- footer ---------- */
+  footer {
+    margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line);
+    display: flex; align-items: flex-start; justify-content: space-between; gap: 24px;
+  }
+  footer .sources { font-size: 13px; line-height: 1.5; color: var(--ink-3); max-width: 1560px; }
+  footer .sources b { color: var(--ink-2); font-weight: 600; }
+  footer .disclaimer { flex: none; font-size: 13px; color: var(--ink-3); }
+</style>
+</head>
+<body>
+<div class="slide">
+
+  <header>
+    <div class="brand">
+      <svg viewBox="0 0 60 60" aria-hidden="true">
+        <path d="M 30 0 A 30 30 0 0 1 60 30 L 38 30 L 30 18 L 2.5 18 A 30 30 0 0 1 30 0 Z" fill="#09090B"/>
+        <path d="M 30 60 A 30 30 0 0 1 0 30 L 22 30 L 30 42 L 57.5 42 A 30 30 0 0 1 30 60 Z" fill="#E53935"/>
+      </svg>
+      <div class="wordmark">Shock <span>Lens</span></div>
+      <div class="brand-divider"></div>
+      <div class="tagline">See the risk<br />before the market does</div>
+    </div>
+    <div class="who">
+      <div class="name">Jonathan Devano</div>
+      <div class="course">IIMT1611 · Individual Pitch</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="pitch">
+
+      <div class="hero">
+        <div class="kicker">AI portfolio risk copilot</div>
+        <div class="number-row">
+          <div class="big">&minus;$9,690</div>
+          <div class="big-sub">from one question &mdash;<br />&ldquo;What if the AI bubble bursts?&rdquo;</div>
+        </div>
+        <div class="problem">
+          <b>Anna holds $100,000 across 15 investments.</b> When the AI bubble
+          makes headlines, she can read the news &mdash; but not what it would
+          cost her. So she guesses.
+        </div>
+      </div>
+
+      <div class="blocks">
+
+        <div class="block evidence">
+          <div class="label">Evidence</div>
+          <div class="body">
+            Prediction markets price it: AI-bubble burst by Dec 2026 &rarr; <em>7%</em>
+            (Polymarket, ~$3.2M traded, retrieved 4 Oct 2026). One click later: <em>&minus;9.7%</em>.
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="label">Solution</div>
+          <div class="body">
+            Any &ldquo;what if&rdquo; &rarr; dollar impact + which holdings drive it.
+            <b>AI interprets; math measures; every number auditable.</b>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="label">Business</div>
+          <div class="body">
+            <b>Free for investors.</b> Brokers pay a per-client fee &mdash; informed
+            clients panic less and leave less.
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="label">Scale</div>
+          <div class="body">
+            One broker integration reaches all its clients; new scenarios are data
+            files, not builds; marginal cost is AI compute. <b>Pilot ask: one platform.</b>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="close-line">
+        Today, Anna guesses. <span>With Shock Lens, she sees it first.</span>
+      </div>
+    </section>
+
+    <aside class="proof">
+      <div class="shot">
+        <img src="assets/final-product.png" alt="Shock Lens stress test result: AI Bubble Bursts, -$9,690; holding contribution to downside: NVDA -$3,150 (32%), QQQ -$2,340 (24%), TSM -$1,210 (12%)" />
+      </div>
+      <div class="caption">
+        <div class="left">
+          <b>AI Bubble Bursts &middot; demo portfolio:</b> 15 tickers, one risk &mdash;
+          NVDA, QQQ and TSM are 23% of the money and nearly two-thirds of the loss.
+        </div>
+        <div class="pill">Engine-computed</div>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <div class="sources">
+      <b>Sources:</b> Polymarket &ldquo;AI bubble burst by December 31, 2026?&rdquo; (7% Yes, ~$3.2M volume, retrieved 4 Oct 2026);
+      Shock Lens app run on the bundled demo portfolio (Global Multi-Asset, $100k) &mdash; scenario shocks are illustrative
+      assumptions, all portfolio impact computed by the deterministic engine, not the AI.
+    </div>
+    <div class="disclaimer">Not investment advice.</div>
+  </footer>
+
+</div>
+</body>
+</html>

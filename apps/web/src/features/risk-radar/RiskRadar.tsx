@@ -27,7 +27,10 @@ export function RiskRadar({
       </p>
       {loading && <LoadingLine label="Loading risk signals…" />}
       {error && <ErrorBanner message={error} />}
-      {!loading && !error && (
+      {!loading && !error && items.length === 0 && (
+        <p className="text-sm text-ink-tertiary">No risk scenarios to show right now.</p>
+      )}
+      {!loading && !error && items.length > 0 && (
         <div>
           {items.map((item) => (
             <RiskRadarRow key={item.id} item={item} onStressTest={onStressTest} />

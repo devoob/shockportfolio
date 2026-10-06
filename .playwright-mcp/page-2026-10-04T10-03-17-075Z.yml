@@ -1,0 +1,341 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - button "Shock Lens home" [ref=e6] [cursor=pointer]:
+          - img "Shock Lens" [ref=e7]
+          - generic [ref=e10]:
+            - generic [ref=e11]: Shock Lens
+            - generic [ref=e12]: Portfolio intelligence
+        - button "Collapse sidebar" [ref=e13] [cursor=pointer]
+      - generic [ref=e66]:
+        - generic [ref=e67]: Active portfolio
+        - combobox "Active portfolio" [ref=e68]:
+          - option "Global Multi-Asset Risk Portfolio" [selected]
+          - option "Technology Heavy Portfolio"
+      - navigation "Main navigation" [ref=e16]:
+        - button "Home" [ref=e17] [cursor=pointer]
+        - button "Stress analytics" [ref=e21] [cursor=pointer]
+        - button "Alerts & signals" [ref=e25] [cursor=pointer]
+        - button "Portfolio" [ref=e29] [cursor=pointer]
+        - button "Settings" [ref=e35] [cursor=pointer]
+      - generic [ref=e40]:
+        - paragraph [ref=e44]: Your numbers stay explainable
+        - paragraph [ref=e45]: AI explains assumptions. Portfolio impact is calculated by the risk engine.
+    - generic [ref=e46]:
+      - banner [ref=e47]:
+        - generic [ref=e48]:
+          - generic [ref=e50]:
+            - paragraph [ref=e51]: Holdings & performance
+            - heading "Your portfolio" [level=1] [ref=e364]
+          - generic [ref=e53]:
+            - generic [ref=e69]:
+              - generic [ref=e70]: Portfolio
+              - combobox "Portfolio" [ref=e71]:
+                - option "Global Multi-Asset Risk Portfolio" [selected]
+                - option "Technology Heavy Portfolio"
+            - button "Open risk report" [ref=e54] [cursor=pointer]
+            - button "AR" [ref=e59] [cursor=pointer]
+      - main [ref=e63]:
+        - generic [ref=e366]:
+          - generic [ref=e367]:
+            - generic [ref=e368]: Global Multi-Asset Risk Portfolio
+            - generic [ref=e369]:
+              - generic [ref=e370]:
+                - generic [ref=e371]: Portfolio Value
+                - generic [ref=e372]: $100,000
+              - generic [ref=e373]:
+                - generic [ref=e374]: Positions
+                - generic [ref=e375]: "15"
+              - generic [ref=e376]:
+                - generic [ref=e377]: Largest Position
+                - generic [ref=e378]: SPY · 15%
+                - generic [ref=e379]: Largest single holding
+          - generic [ref=e380]:
+            - generic [ref=e381]:
+              - heading "Holdings" [level=2] [ref=e382]
+              - generic [ref=e383]: Click for asset intelligence · weights must sum to 100%
+            - generic [ref=e384]:
+              - generic [ref=e385]: Weights sum to 100.0%
+              - generic [ref=e386]:
+                - generic [ref=e387]:
+                  - button "Choose File" [ref=e388]
+                  - button "Import CSV" [ref=e389] [cursor=pointer]
+                  - link "template" [ref=e390] [cursor=pointer]:
+                    - /url: data:text/csv;charset=utf-8,…
+                - button "Reset demo portfolio" [ref=e391] [cursor=pointer]
+            - table [ref=e393]:
+              - rowgroup [ref=e394]:
+                - row [ref=e395]:
+                  - columnheader "Holding" [ref=e396]
+                  - columnheader "Category" [ref=e397]
+                  - columnheader "Weight (editable)" [ref=e398]
+                  - columnheader "Value" [ref=e399]
+                  - columnheader "Return since Oct 6, 2025" [ref=e400]
+              - rowgroup [ref=e401]:
+                - row [ref=e402] [cursor=pointer]:
+                  - cell [ref=e403]:
+                    - button "Open SPY details" [ref=e404]:
+                      - generic [ref=e405]: SPY›
+                      - generic [ref=e406]: SPDR S&P 500 ETF Trust
+                  - cell "US large-cap equities ETF · Equity ETF" [ref=e407]:
+                    - generic [ref=e408]: US large-cap equities
+                    - generic [ref=e409]: ETF · Equity ETF
+                  - cell "15 %" [ref=e410]:
+                    - generic [ref=e414]:
+                      - spinbutton "SPY weight percent" [ref=e415]: "15"
+                      - generic [ref=e416]: "%"
+                  - cell "$15,000" [ref=e417]
+                  - cell "+15.8%" [ref=e418]
+                - row [ref=e419] [cursor=pointer]:
+                  - cell [ref=e420]:
+                    - button "Open QQQ details" [ref=e421]:
+                      - generic [ref=e422]: QQQ›
+                      - generic [ref=e423]: Invesco QQQ Trust
+                  - cell "US large-cap growth / technology ETF · Equity ETF" [ref=e424]:
+                    - generic [ref=e425]: US large-cap growth / technology
+                    - generic [ref=e426]: ETF · Equity ETF
+                  - cell "10 %" [ref=e427]:
+                    - generic [ref=e431]:
+                      - spinbutton "QQQ weight percent" [ref=e432]: "10"
+                      - generic [ref=e433]: "%"
+                  - cell "$10,000" [ref=e434]
+                  - cell "+23.9%" [ref=e435]
+                - row [ref=e436] [cursor=pointer]:
+                  - cell [ref=e437]:
+                    - button "Open TLT details" [ref=e438]:
+                      - generic [ref=e439]: TLT›
+                      - generic [ref=e440]: iShares 20+ Year Treasury Bond ETF
+                  - cell "Long-duration US Treasuries ETF · Bonds" [ref=e441]:
+                    - generic [ref=e442]: Long-duration US Treasuries
+                    - generic [ref=e443]: ETF · Bonds
+                  - cell "9 %" [ref=e444]:
+                    - generic [ref=e448]:
+                      - spinbutton "TLT weight percent" [ref=e449]: "9"
+                      - generic [ref=e450]: "%"
+                  - cell "$9,000" [ref=e451]
+                  - cell "-8.6%" [ref=e452]
+                - row [ref=e453] [cursor=pointer]:
+                  - cell [ref=e454]:
+                    - button "Open NVDA details" [ref=e455]:
+                      - generic [ref=e456]: NVDA›
+                      - generic [ref=e457]: NVIDIA Corporation
+                  - cell "Semiconductors / AI infrastructure Stock · Single stock" [ref=e458]:
+                    - generic [ref=e459]: Semiconductors / AI infrastructure
+                    - generic [ref=e460]: Stock · Single stock
+                  - cell "7 %" [ref=e461]:
+                    - generic [ref=e465]:
+                      - spinbutton "NVDA weight percent" [ref=e466]: "7"
+                      - generic [ref=e467]: "%"
+                  - cell "$7,000" [ref=e468]
+                  - cell "+26.4%" [ref=e469]
+                - row [ref=e470] [cursor=pointer]:
+                  - cell [ref=e471]:
+                    - button "Open GLD details" [ref=e472]:
+                      - generic [ref=e473]: GLD›
+                      - generic [ref=e474]: SPDR Gold Shares
+                  - cell "Gold ETF · Commodities" [ref=e475]:
+                    - generic [ref=e476]: Gold
+                    - generic [ref=e477]: ETF · Commodities
+                  - cell "7 %" [ref=e478]:
+                    - generic [ref=e482]:
+                      - spinbutton "GLD weight percent" [ref=e483]: "7"
+                      - generic [ref=e484]: "%"
+                  - cell "$7,000" [ref=e485]
+                  - cell "+4.3%" [ref=e486]
+                - row [ref=e487] [cursor=pointer]:
+                  - cell [ref=e488]:
+                    - button "Open TSM details" [ref=e489]:
+                      - generic [ref=e490]: TSM›
+                      - generic [ref=e491]: Taiwan Semiconductor Manufacturing Company
+                  - cell "Semiconductor foundry ADR · Single stock" [ref=e492]:
+                    - generic [ref=e493]: Semiconductor foundry
+                    - generic [ref=e494]: ADR · Single stock
+                  - cell "6 %" [ref=e495]:
+                    - generic [ref=e499]:
+                      - spinbutton "TSM weight percent" [ref=e500]: "6"
+                      - generic [ref=e501]: "%"
+                  - cell "$6,000" [ref=e502]
+                  - cell "+58.0%" [ref=e503]
+                - row [ref=e504] [cursor=pointer]:
+                  - cell [ref=e505]:
+                    - button "Open JPM details" [ref=e506]:
+                      - generic [ref=e507]: JPM›
+                      - generic [ref=e508]: JPMorgan Chase & Co.
+                  - cell "Banks / financials Stock · Single stock" [ref=e509]:
+                    - generic [ref=e510]: Banks / financials
+                    - generic [ref=e511]: Stock · Single stock
+                  - cell "6 %" [ref=e512]:
+                    - generic [ref=e516]:
+                      - spinbutton "JPM weight percent" [ref=e517]: "6"
+                      - generic [ref=e518]: "%"
+                  - cell "$6,000" [ref=e519]
+                  - cell "+9.0%" [ref=e520]
+                - row [ref=e521] [cursor=pointer]:
+                  - cell [ref=e522]:
+                    - button "Open XOM details" [ref=e523]:
+                      - generic [ref=e524]: XOM›
+                      - generic [ref=e525]: Exxon Mobil Corporation
+                  - cell "Integrated oil & gas Stock · Single stock" [ref=e526]:
+                    - generic [ref=e527]: Integrated oil & gas
+                    - generic [ref=e528]: Stock · Single stock
+                  - cell "6 %" [ref=e529]:
+                    - generic [ref=e533]:
+                      - spinbutton "XOM weight percent" [ref=e534]: "6"
+                      - generic [ref=e535]: "%"
+                  - cell "$6,000" [ref=e536]
+                  - cell "+47.8%" [ref=e537]
+                - row [ref=e538] [cursor=pointer]:
+                  - cell [ref=e539]:
+                    - button "Open BTC details" [ref=e540]:
+                      - generic [ref=e541]: BTC›
+                      - generic [ref=e542]: Bitcoin
+                  - cell "Cryptocurrency Cryptocurrency · Crypto" [ref=e543]:
+                    - generic [ref=e544]: Cryptocurrency
+                    - generic [ref=e545]: Cryptocurrency · Crypto
+                  - cell "6 %" [ref=e546]:
+                    - generic [ref=e550]:
+                      - spinbutton "BTC weight percent" [ref=e551]: "6"
+                      - generic [ref=e552]: "%"
+                  - cell "$6,000" [ref=e553]
+                  - cell "-32.3%" [ref=e554]
+                - row [ref=e555] [cursor=pointer]:
+                  - cell [ref=e556]:
+                    - button "Open XLV details" [ref=e557]:
+                      - generic [ref=e558]: XLV›
+                      - generic [ref=e559]: Health Care Select Sector SPDR Fund
+                  - cell "US healthcare sector ETF · Equity ETF" [ref=e560]:
+                    - generic [ref=e561]: US healthcare sector
+                    - generic [ref=e562]: ETF · Equity ETF
+                  - cell "5 %" [ref=e563]:
+                    - generic [ref=e567]:
+                      - spinbutton "XLV weight percent" [ref=e568]: "5"
+                      - generic [ref=e569]: "%"
+                  - cell "$5,000" [ref=e570]
+                  - cell "+17.2%" [ref=e571]
+                - row [ref=e572] [cursor=pointer]:
+                  - cell [ref=e573]:
+                    - button "Open FXI details" [ref=e574]:
+                      - generic [ref=e575]: FXI›
+                      - generic [ref=e576]: iShares China Large-Cap ETF
+                  - cell "China large-cap equities ETF · Equity ETF" [ref=e577]:
+                    - generic [ref=e578]: China large-cap equities
+                    - generic [ref=e579]: ETF · Equity ETF
+                  - cell "5 %" [ref=e580]:
+                    - generic [ref=e584]:
+                      - spinbutton "FXI weight percent" [ref=e585]: "5"
+                      - generic [ref=e586]: "%"
+                  - cell "$5,000" [ref=e587]
+                  - cell "-18.4%" [ref=e588]
+                - row [ref=e589] [cursor=pointer]:
+                  - cell [ref=e590]:
+                    - button "Open VNQ details" [ref=e591]:
+                      - generic [ref=e592]: VNQ›
+                      - generic [ref=e593]: Vanguard Real Estate ETF
+                  - cell "US real estate (REITs) ETF · Real estate" [ref=e594]:
+                    - generic [ref=e595]: US real estate (REITs)
+                    - generic [ref=e596]: ETF · Real estate
+                  - cell "5 %" [ref=e597]:
+                    - generic [ref=e601]:
+                      - spinbutton "VNQ weight percent" [ref=e602]: "5"
+                      - generic [ref=e603]: "%"
+                  - cell "$5,000" [ref=e604]
+                  - cell "+2.6%" [ref=e605]
+                - row [ref=e606] [cursor=pointer]:
+                  - cell [ref=e607]:
+                    - button "Open HYG details" [ref=e608]:
+                      - generic [ref=e609]: HYG›
+                      - generic [ref=e610]: iShares iBoxx $ High Yield Corporate Bond ETF
+                  - cell "US high-yield corporate credit ETF · Bonds" [ref=e611]:
+                    - generic [ref=e612]: US high-yield corporate credit
+                    - generic [ref=e613]: ETF · Bonds
+                  - cell "5 %" [ref=e614]:
+                    - generic [ref=e618]:
+                      - spinbutton "HYG weight percent" [ref=e619]: "5"
+                      - generic [ref=e620]: "%"
+                  - cell "$5,000" [ref=e621]
+                  - cell "+0.9%" [ref=e622]
+                - row [ref=e623] [cursor=pointer]:
+                  - cell [ref=e624]:
+                    - button "Open LMT details" [ref=e625]:
+                      - generic [ref=e626]: LMT›
+                      - generic [ref=e627]: Lockheed Martin Corporation
+                  - cell "Aerospace & defence Stock · Single stock" [ref=e628]:
+                    - generic [ref=e629]: Aerospace & defence
+                    - generic [ref=e630]: Stock · Single stock
+                  - cell "4 %" [ref=e631]:
+                    - generic [ref=e635]:
+                      - spinbutton "LMT weight percent" [ref=e636]: "4"
+                      - generic [ref=e637]: "%"
+                  - cell "$4,000" [ref=e638]
+                  - cell "+0.8%" [ref=e639]
+                - row [ref=e640] [cursor=pointer]:
+                  - cell [ref=e641]:
+                    - button "Open BIL details" [ref=e642]:
+                      - generic [ref=e643]: BIL›
+                      - generic [ref=e644]: SPDR Bloomberg 1-3 Month T-Bill ETF
+                  - cell "US Treasury bills (cash-like) ETF · Cash-like" [ref=e645]:
+                    - generic [ref=e646]: US Treasury bills (cash-like)
+                    - generic [ref=e647]: ETF · Cash-like
+                  - cell "4 %" [ref=e648]:
+                    - generic [ref=e652]:
+                      - spinbutton "BIL weight percent" [ref=e653]: "4"
+                      - generic [ref=e654]: "%"
+                  - cell "$4,000" [ref=e655]
+                  - cell "+3.6%" [ref=e656]
+          - generic [ref=e657]:
+            - heading "Performance" [level=2] [ref=e659]
+            - generic [ref=e661]:
+              - generic [ref=e662]:
+                - generic [ref=e663]:
+                  - generic [ref=e664]:
+                    - generic [ref=e665]: $111,394
+                    - generic [ref=e666]: +11.4%
+                  - generic [ref=e667]: $100,000 on Oct 6, 2025 → Oct 2, 2026
+                - generic [ref=e668]:
+                  - group "Chart" [ref=e669]:
+                    - button "Portfolio value" [pressed] [ref=e670] [cursor=pointer]
+                    - button "Compare holdings" [ref=e671] [cursor=pointer]
+                  - group "Range" [ref=e672]:
+                    - button "1M" [ref=e673] [cursor=pointer]
+                    - button "3M" [ref=e674] [cursor=pointer]
+                    - button "6M" [ref=e675] [cursor=pointer]
+                    - button "1Y" [pressed] [ref=e676] [cursor=pointer]
+                    - button "2Y" [ref=e677] [cursor=pointer]
+                    - button "5Y" [ref=e678] [cursor=pointer]
+              - img [ref=e682]:
+                - generic [ref=e686]:
+                  - generic [ref=e687]: Oct 15
+                  - generic [ref=e689]: Nov 5
+                  - generic [ref=e691]: Nov 26
+                  - generic [ref=e693]: Dec 19
+                  - generic [ref=e695]: Jan 13
+                  - generic [ref=e697]: Feb 4
+                  - generic [ref=e699]: Feb 26
+                  - generic [ref=e701]: Mar 19
+                  - generic [ref=e703]: Apr 10
+                  - generic [ref=e705]: May 1
+                  - generic [ref=e707]: May 26
+                  - generic [ref=e709]: Jun 17
+                  - generic [ref=e711]: Jul 9
+                  - generic [ref=e713]: Jul 30
+                  - generic [ref=e715]: Aug 20
+                  - generic [ref=e717]: Sep 11
+                  - generic [ref=e719]: Oct 2
+                - generic [ref=e722]:
+                  - generic [ref=e723]: $94,500
+                  - generic [ref=e725]: $99,000
+                  - generic [ref=e727]: $103,500
+                  - generic [ref=e729]: $108,000
+                  - generic [ref=e731]: $112,500
+              - paragraph [ref=e737]:
+                - text: Real prices from
+                - link "Yahoo Finance ↗" [ref=e738] [cursor=pointer]:
+                  - /url: https://finance.yahoo.com
+                - text: "(adjusted close, retrieved Oct 4, 2026, 6:00 PM). Portfolio value is hypothetical: today's weights bought on Oct 6, 2025, held without rebalancing."
+          - group [ref=e739]:
+            - generic "More analyticsrisk summary, every scenario ranked, allocation, attribution, risk drivers ›" [ref=e740] [cursor=pointer]:
+              - generic [ref=e741]: More analyticsrisk summary, every scenario ranked, allocation, attribution, risk drivers
+              - generic [ref=e742]: ›
+      - contentinfo [ref=e65]: Estimates are scenario-based, not forecasts. Shock Lens does not provide investment advice and does not execute trades.
+  - generic [aria-hidden] [ref=e743]: $94,500

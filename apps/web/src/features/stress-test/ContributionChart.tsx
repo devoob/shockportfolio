@@ -7,6 +7,16 @@ const NEGATIVE = "#E5485D";
 const POSITIVE = "#168A62";
 const NEUTRAL = "#7B828E";
 
+// Axis labels stay compact so ticks never collide in the narrow result column.
+// Exact figures remain in the bar labels and the tooltip.
+function formatAxisCurrency(value: number): string {
+  const sign = value > 0 ? "+" : value < 0 ? "-" : "";
+  const abs = Math.abs(value);
+  if (abs >= 10_000) return `${sign}$${(abs / 1000).toFixed(0)}k`;
+  if (abs >= 1000) return `${sign}$${(abs / 1000).toFixed(1)}k`;
+  return `${sign}$${Math.round(abs)}`;
+}
+
 export function ContributionChart({ assetImpacts }: { assetImpacts: AssetImpact[] }) {
   const data = [...assetImpacts]
     .sort((a, b) => a.impact_value - b.impact_value)
@@ -16,7 +26,7 @@ export function ContributionChart({ assetImpacts }: { assetImpacts: AssetImpact[
       hasAssumption: a.has_assumption,
       label: a.has_assumption
         ? `${formatSignedPercent(a.shock_pct)} · ${formatSignedCurrency(a.impact_value)}`
-        : "no data",
+        : "no assumption",
     }));
 
   return (
@@ -27,7 +37,8 @@ export function ContributionChart({ assetImpacts }: { assetImpacts: AssetImpact[
         <BarChart data={data} layout="vertical" margin={{ top: 4, right: 130, bottom: 4, left: 4 }}>
           <XAxis
             type="number"
-            tickFormatter={(v: number) => formatSignedCurrency(v)}
+            tickFormatter={formatAxisCurrency}
+            minTickGap={28}
             tick={{ fill: "#7B828E", fontSize: 11, fontFamily: "Inter, system-ui, sans-serif" }}
             axisLine={{ stroke: "#E3E6EB" }}
             tickLine={false}

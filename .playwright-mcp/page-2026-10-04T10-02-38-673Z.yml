@@ -1,0 +1,30 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e5]:
+      - button "Shock Lens home" [ref=e6] [cursor=pointer]:
+        - img "Shock Lens" [ref=e7]
+        - generic [ref=e10]:
+          - generic [ref=e11]: Shock Lens
+          - generic [ref=e12]: Portfolio intelligence
+      - button "Collapse sidebar" [ref=e13] [cursor=pointer]
+    - navigation "Main navigation" [ref=e16]:
+      - button "Home" [ref=e17] [cursor=pointer]
+      - button "Stress analytics" [ref=e21] [cursor=pointer]
+      - button "Alerts & signals" [ref=e25] [cursor=pointer]
+      - button "Portfolio" [ref=e29] [cursor=pointer]
+      - button "Settings" [ref=e35] [cursor=pointer]
+    - generic [ref=e40]:
+      - paragraph [ref=e44]: Your numbers stay explainable
+      - paragraph [ref=e45]: AI explains assumptions. Portfolio impact is calculated by the risk engine.
+  - generic [ref=e46]:
+    - banner [ref=e47]:
+      - generic [ref=e48]:
+        - generic [ref=e50]:
+          - paragraph [ref=e51]: Portfolio intelligence
+          - heading "Shock Lens" [level=1] [ref=e52]
+        - generic [ref=e53]:
+          - button "Open risk report" [ref=e54] [cursor=pointer]
+          - button "AR" [ref=e59] [cursor=pointer]
+    - main [ref=e63]:
+      - generic [ref=e64]: Loading portfolio…
+    - contentinfo [ref=e65]: Estimates are scenario-based, not forecasts. Shock Lens does not provide investment advice and does not execute trades.

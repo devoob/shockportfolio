@@ -1,0 +1,42 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e3]:
+    - complementary [ref=f1e4]:
+      - generic [ref=f1e5]:
+        - button "Shock Lens home" [ref=f1e6] [cursor=pointer]:
+          - img "Shock Lens" [ref=f1e7]
+          - generic [ref=f1e10]:
+            - generic [ref=f1e11]: Shock Lens
+            - generic [ref=f1e12]: Portfolio intelligence
+        - button "Collapse sidebar" [ref=f1e13] [cursor=pointer]
+      - generic [ref=f1e16]:
+        - generic [ref=f1e17]: Active portfolio
+        - combobox "Active portfolio" [ref=f1e18]:
+          - option "Global Multi-Asset Risk Portfolio" [selected]
+          - option "Technology Heavy Portfolio"
+      - navigation "Main navigation" [ref=f1e19]:
+        - button "Home" [ref=f1e20] [cursor=pointer]
+        - button "Stress analytics" [ref=f1e24] [cursor=pointer]
+        - button "Alerts & signals" [ref=f1e28] [cursor=pointer]
+        - button "Portfolio" [ref=f1e32] [cursor=pointer]
+        - button "Settings" [ref=f1e38] [cursor=pointer]
+      - generic [ref=f1e43]:
+        - paragraph [ref=f1e47]: Your numbers stay explainable
+        - paragraph [ref=f1e48]: AI explains assumptions. Portfolio impact is calculated by the risk engine.
+    - generic [ref=f1e49]:
+      - banner [ref=f1e50]:
+        - generic [ref=f1e51]:
+          - generic [ref=f1e53]:
+            - paragraph [ref=f1e54]: Holdings & performance
+            - heading "Your portfolio" [level=1] [ref=f1e1000]
+          - generic [ref=f1e56]:
+            - generic [ref=f1e57]:
+              - generic [ref=f1e58]: Portfolio
+              - combobox "Portfolio" [ref=f1e59]:
+                - option "Global Multi-Asset Risk Portfolio" [selected]
+                - option "Technology Heavy Portfolio"
+            - button "Open risk report" [ref=f1e60] [cursor=pointer]
+            - button "AR" [ref=f1e65] [cursor=pointer]
+      - main [ref=f1e69]:
+        - generic [ref=f1e1001]: Loading view…
+      - contentinfo [ref=f1e473]: Estimates are scenario-based, not forecasts. Shock Lens does not provide investment advice and does not execute trades.
+  - generic [aria-hidden] [ref=f1e830]: +$1

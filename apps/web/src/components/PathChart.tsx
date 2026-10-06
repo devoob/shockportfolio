@@ -92,7 +92,7 @@ export function PathChart({
         )}
         {!loading && !error && data.length < 2 && (
           <div className="flex h-[220px] items-center justify-center border border-dashed border-line text-sm text-ink-tertiary">
-            No path data yet — run scripts/snapshot_polymarket.py to cache a snapshot.
+            No path data is available for this market yet.
           </div>
         )}
         {!loading && !error && data.length >= 2 && (

@@ -5,7 +5,8 @@ export function SettingsPanel() {
         <h2 className="text-xl font-bold tracking-tight">A calmer default</h2>
         <p className="mt-2 max-w-2xl text-sm leading-relaxed text-ink-secondary">
           The home screen shows the few numbers that help you decide what to inspect next. Detailed
-          methodology, evidence, and model assumptions remain available inside each analysis.
+          methodology, evidence, and model assumptions remain available inside each analysis. This
+          build has no editable display settings; the behaviors below are always on.
         </p>
         <div className="mt-7 grid gap-4 sm:grid-cols-2">
           <div className="rounded-3xl bg-surface p-5">
@@ -14,7 +15,7 @@ export function SettingsPanel() {
               Comfortable spacing is active. Analytical tables retain full precision.
             </p>
             <span className="mt-4 inline-flex rounded-full bg-risk-positive/10 px-3 py-1 text-xs font-semibold text-risk-positive">
-              Comfortable
+              Active now
             </span>
           </div>
           <div className="rounded-3xl bg-surface p-5">
@@ -23,7 +24,7 @@ export function SettingsPanel() {
               Only short transitions are used. Reduced-motion preferences are respected.
             </p>
             <span className="mt-4 inline-flex rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent">
-              Subtle
+              Active now
             </span>
           </div>
         </div>

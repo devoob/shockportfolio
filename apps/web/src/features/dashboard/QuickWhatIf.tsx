@@ -111,7 +111,11 @@ export function QuickWhatIf({
       },
       ...savedWhatIfs.filter((item) => item.id !== currentId),
     ].slice(0, 12);
-    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+    try {
+      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+    } catch {
+      // Storage can be unavailable (private mode); keep the session copy.
+    }
     setSavedWhatIfs(next);
   };
 

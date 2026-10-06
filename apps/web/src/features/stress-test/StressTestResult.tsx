@@ -82,11 +82,25 @@ export function StressTestResult({
           </p>
         )}
         {result.warnings && result.warnings.length > 0 && (
-          <ul className="mt-3 space-y-1 font-mono text-[11px] text-ink-tertiary">
-            {result.warnings.map((warning, i) => (
-              <li key={i}>{warning}</li>
-            ))}
-          </ul>
+          <div className="mt-3 font-mono text-[11px] text-ink-tertiary">
+            <ul className="space-y-1">
+              {result.warnings.slice(0, 3).map((warning, i) => (
+                <li key={i}>{warning}</li>
+              ))}
+            </ul>
+            {result.warnings.length > 3 && (
+              <details className="mt-1">
+                <summary className="cursor-pointer transition-colors hover:text-ink">
+                  Show all {result.warnings.length} coverage notes
+                </summary>
+                <ul className="mt-1 space-y-1">
+                  {result.warnings.slice(3).map((warning, i) => (
+                    <li key={i}>{warning}</li>
+                  ))}
+                </ul>
+              </details>
+            )}
+          </div>
         )}
       </div>
 

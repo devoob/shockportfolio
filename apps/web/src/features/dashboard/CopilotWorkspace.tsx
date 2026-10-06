@@ -319,9 +319,9 @@ export function CopilotWorkspace({
             )}
 
             <div className="flex flex-wrap gap-2 pl-11">
-              <button type="button" onClick={() => worst && onMitigateScenario(worst.scenario_id)} className="rounded-full border border-line bg-white px-3 py-2 text-xs font-semibold text-ink-secondary shadow-sm hover:border-accent hover:text-accent-strong">🛡️ How to hedge the worst drawdown?</button>
-              <button type="button" onClick={onOpenPortfolio} className="rounded-full border border-line bg-white px-3 py-2 text-xs font-semibold text-ink-secondary shadow-sm hover:border-accent hover:text-accent-strong">📊 Compare a broader asset mix</button>
-              <button type="button" onClick={() => void runPrompt("Interest rates rise 2 percentage points and technology stocks fall 20%") } className="rounded-full border border-line bg-white px-3 py-2 text-xs font-semibold text-ink-secondary shadow-sm hover:border-accent hover:text-accent-strong">⚡ Test +200bps Fed hike</button>
+              <button type="button" disabled={!worst} onClick={() => worst && onMitigateScenario(worst.scenario_id)} className="rounded-full border border-line bg-white px-3 py-2 text-xs font-semibold text-ink-secondary shadow-sm hover:border-accent hover:text-accent-strong disabled:cursor-not-allowed disabled:opacity-50">How to hedge the worst drawdown?</button>
+              <button type="button" onClick={onOpenPortfolio} className="rounded-full border border-line bg-white px-3 py-2 text-xs font-semibold text-ink-secondary shadow-sm hover:border-accent hover:text-accent-strong">Compare a broader asset mix</button>
+              <button type="button" onClick={() => void runPrompt("Interest rates rise 2 percentage points and technology stocks fall 20%") } className="rounded-full border border-line bg-white px-3 py-2 text-xs font-semibold text-ink-secondary shadow-sm hover:border-accent hover:text-accent-strong">Test +200bps Fed hike</button>
             </div>
 
             <div className="sticky bottom-0 z-10 pt-3">

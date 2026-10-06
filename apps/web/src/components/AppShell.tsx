@@ -1,4 +1,4 @@
-import { type ReactNode, useState } from "react";
+import { type ReactNode, useEffect, useRef, useState } from "react";
 import { LogoMark, Wordmark } from "./Logo";
 
 export type AppView = "home" | "portfolio" | "risks" | "stress" | "settings" | "report";
@@ -142,6 +142,25 @@ export function AppShell({
     }
   });
   const copy = VIEW_COPY[activeView];
+  const profileRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!profileOpen) return;
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setProfileOpen(false);
+    };
+    const onPointerDown = (event: MouseEvent) => {
+      if (profileRef.current && !profileRef.current.contains(event.target as Node)) {
+        setProfileOpen(false);
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    window.addEventListener("mousedown", onPointerDown);
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      window.removeEventListener("mousedown", onPointerDown);
+    };
+  }, [profileOpen]);
 
   const toggleSidebar = () => {
     setSidebarCollapsed((collapsed) => {
@@ -261,9 +280,10 @@ export function AppShell({
                 <Icon name="report" className="h-[1.125rem] w-[1.125rem]" />
               </button>
 
-              <div className="relative">
+              <div className="relative" ref={profileRef}>
                 <button
                   type="button"
+                  aria-label="Account menu"
                   aria-expanded={profileOpen}
                   onClick={() => setProfileOpen((open) => !open)}
                   className="flex items-center gap-2 rounded-2xl border border-line bg-surface-raised p-1.5 pr-2.5 shadow-sm transition hover:border-line-strong"

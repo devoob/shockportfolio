@@ -1,4 +1,4 @@
-import { type ReactNode, useEffect, useRef, useState } from "react";
+import { type KeyboardEvent as ReactKeyboardEvent, type ReactNode, useEffect, useRef, useState } from "react";
 import { ErrorBanner } from "../../components/ErrorBanner";
 import { ErrorBoundary } from "../../components/ErrorBoundary";
 import { LoadingLine } from "../../components/LoadingLine";
@@ -166,6 +166,7 @@ export function AssetDrawer({
   }, [symbol]);
 
   useEffect(() => {
+    const previous = document.activeElement instanceof HTMLElement ? document.activeElement : null;
     closeRef.current?.focus();
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
     window.addEventListener("keydown", onKey);
@@ -174,13 +175,39 @@ export function AssetDrawer({
     return () => {
       window.removeEventListener("keydown", onKey);
       document.body.style.overflow = overflow;
+      if (previous && previous.isConnected) previous.focus();
     };
   }, [onClose]);
+
+  const trapFocus = (event: ReactKeyboardEvent<HTMLDivElement>) => {
+    if (event.key !== "Tab") return;
+    const focusables = Array.from(
+      event.currentTarget.querySelectorAll<HTMLElement>(
+        'a[href], button:not([disabled]):not([tabindex="-1"]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])',
+      ),
+    ).filter((element) => element.getClientRects().length > 0);
+    if (focusables.length === 0) return;
+    const first = focusables[0];
+    const last = focusables[focusables.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  };
 
   const position = portfolio.positions.find((p) => p.symbol === symbol);
 
   return (
-    <div className="fixed inset-0 z-30" role="dialog" aria-modal="true" aria-label={`${symbol} details`}>
+    <div
+      className="fixed inset-0 z-30"
+      role="dialog"
+      aria-modal="true"
+      aria-label={`${symbol} details`}
+      onKeyDown={trapFocus}
+    >
       <button
         type="button"
         aria-label="Close"
